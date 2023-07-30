@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Ubuntu&display=swap');
+
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+
+.logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.main {
+    background-image: url('../Assets/man-2604149.jpg');
+    background-size: cover;
+    position: relative;
+    height: 530px;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.353) !important;
+    color: white;
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar-toggler {
+    background-color: rgba(255, 255, 255, 0.332) !important;
+}
+
+.nav-link {
+    font-size: 1.4rem;
+}
+
+.hero-container {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* position: fixed; */
+}
+
+.hero-head-container {
+    margin-top: 100px;
+}
+
+.heading1,
+.heading2 {
+    text-shadow: 1px 1px 2px black, -1px -1px 2px black;
+    color: white;
+    font-family: 'roboto', sans-serif;
+}
+
+.btn1 {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.746);
+    font-size: 1.2rem;
+    font-family: 'poppins', sans-serif;
+}
+
+.search-heading {
+    font-size: 2rem;
+    font-family: 'poppins', sans-serif;
+    font-weight: 700;
+}
+
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#search {
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+    border: 1px solid;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.exerciseComponent {
+    border-top: 5px solid red;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.exerciseImage {
+    width: 100% !important;
+
+}
+
+.video {
+    width: 100%;
+    border-top: 5px solid black;
+}
+
+.video-head {
+    margin-top: 10px;
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'roboto', sans-serif;
+}
+
+.video-data {
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+}
+
+.video-data:hover {
+    transform: translateY(-10px);
+}
+
+
+.clicked-btn {
+    background-color: green;
+}
+
+.search-btn {
+    font-size: 2rem;
+    width: 50vw;
+    padding: 10px;
+    margin: 10px;
+    font-family: 'poppins', sans-serif;
+    border-radius: 30px;
+    color: white;
+    background-color: rgba(26, 22, 22, 0.916);
+}
+
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.thumbnail {
+    width: 100% !important;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    /* height: 65px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'ubuntu', sans-serif;
+}
+
+
+.bmi-container {
+    margin-top: 10px;
+    /* height: 550px; */
+    background-color: rgba(0, 0, 0, 0.899);
+}
+
+.input {
+    width: 84vw;
+    border: none;
+    border-radius: 5px;
+}
+
+Label {
+    font-size: 2rem;
+}
+
+.weight-heading {
+    font: 3rem;
+    color: rgb(0, 255, 251);
+    font-weight: 700;
+}
+
+.submit-button {
+    padding-inline: 10px;
+}
+
+.submit-button {
+    --color: #560bad;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+}
+
+.submit-button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.submit-button:hover {
+    color: #fff;
+}
+
+.submit-button:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+}
+
+.submit-button:hover:before {
+    top: -30px;
+    left: -30px;
+}
+
+.submit-button:active:before {
+    background: #3a0ca3;
+    transition: background 0s;
+}
+
+.info {
+    font-size: 1.5rem;
+    font-family: 'poppins', sans-serif;
+}
+
+/* .hero-head-container {} */
+
+@media screen and (max-width: 970px) {
+
+    .hero-container {
+        width: 100%;
+        position: absolute;
+        top: 55px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .video-head {
+        font: rem;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .heading1 {
+        font-size: 2rem !important;
+    }
+
+    .heading2 {
+        font-size: 1rem !important;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .search-btn {
+        font-size: 1.2rem;
+        width: 250px;
+        padding: 3px;
+        margin: 5px;
+        font-family: 'poppins', sans-serif;
+        border-radius: 5px;
+        color: white;
+        background-color: rgba(26, 22, 22, 0.916);
+    }
+}
